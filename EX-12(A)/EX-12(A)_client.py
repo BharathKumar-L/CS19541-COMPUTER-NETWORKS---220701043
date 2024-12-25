@@ -1,4 +1,3 @@
-
 import socket
 
 def tcp_client(host='127.0.0.1', port=12345):
@@ -10,6 +9,5 @@ def tcp_client(host='127.0.0.1', port=12345):
         
         data = client_socket.recv(1024)
         print(f"Received from server: {data.decode()}")
-
 
 tcp_client()

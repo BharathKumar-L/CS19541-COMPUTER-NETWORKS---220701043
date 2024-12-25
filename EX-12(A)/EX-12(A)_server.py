@@ -1,4 +1,3 @@
-
 import socket
 
 def tcp_server(host='127.0.0.1', port=12345):
@@ -10,7 +9,6 @@ def tcp_server(host='127.0.0.1', port=12345):
         while True:
             conn, addr = server_socket.accept()
             print(f"Connected by {addr}")
-            
             with conn:
                 while True:
                     data = conn.recv(1024)
